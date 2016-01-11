@@ -1,0 +1,21 @@
+contract Test {
+    
+function fooOG1(uint a) { EventOG1(a);}
+event EventOG1(uint  a);
+
+function fooOG2(uint a) { EventOG2(a);}
+event EventOG2(uint indexed a);
+
+function fooOG3(uint a,uint b) { EventOG3(a,b);}
+event EventOG3(uint indexed a, uint indexed b);
+
+function fooOG4(uint a,uint b,uint b0) { EventOG4(a,b,b0);}
+event EventOG4(uint indexed a, uint indexed b, uint indexed b0);
+
+//function fooOGx(uint a,uint b,uint b0,uint a0) { EventOGx(a,b,b0,a0);}
+//event EventOGx(uint indexed a, uint indexed b, uint indexed b0, uint indexed a0);
+
+function fooOG5(uint a,uint b,uint b0,uint a0,uint c) { EventOG5(a,b,b0,a0,c);}
+event EventOG5(uint  a, uint  b, uint  b0, uint  a0,uint c);
+
+}
